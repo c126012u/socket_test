@@ -14,7 +14,27 @@ obj = {
     "location":["0.2", "0.2", "0.8"],
     "motion":"POINTING",
     "name":"エルモ"
-}
+},
+"2":{
+    "location":["0.2", "0.2", "0.8"],
+    "motion":"POINTING",
+    "name":"エルモ"
+},
+"3":{
+    "location":["0.2", "0.2", "0.8"],
+    "motion":"POINTING",
+    "name":"エルモ"
+},
+"4":{
+    "location":["0.2", "0.2", "0.8"],
+    "motion":"POINTING",
+    "name":"エルモ"
+},
+"5":{
+    "location":["0.2", "0.2", "0.8"],
+    "motion":"POINTING",
+    "name":"エルモ"
+},
 }
 
 obj_sock = json.dumps(obj)
@@ -22,6 +42,8 @@ obj_sock = json.dumps(obj)
 
 client.send(obj_sock.encode('utf-8')) #適当なデータを送信します（届く側にわかるように）
 
-response = client.recv(4096) #レシーブは適当な2進数にします（大きすぎるとダメ）
 
-print(response)
+#response = client.recv(4096) #レシーブは適当な2進数にします（大きすぎるとダメ）
+client.close()
+
+#print(response)
